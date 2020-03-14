@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <title>Kundeinfo</title>
+    <title>Kurv</title>
 
 </head>
 <body background="Cupcake%20baggrund.jpg">
@@ -26,12 +26,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Ordrer <span class="sr-only">(current)</span></a>
+                <li class="nav-item active" style="right: auto">
+                    <a class="nav-link" href="index.html">Log ud</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Kunder</a>
+                <li class="nav-item active" style="right: auto">
+                    <a class="nav-link" href="index.html">Mine ordrer</a>
                 </li>
+                <li class="nav-item active" style="right: auto">
+                    <a class="nav-link disabled" href="#">Saldo: 500,-</a>
+                </li>
+
             </ul>
             <span class="navbar-text" style="margin-right: 20px">
                 poul@poulmail.poul
@@ -44,34 +48,57 @@
 
     <div class="jumbotron">
 
-        <div style="text-align: center">
-            <h1 class="display-4">Du er der næsten!</h1>
+        <p class="lead">Her kan du se alle dine ordrer</p>
+
+        <div class="jumbotron">
+
+            <h1>Bestillinger</h1>
             <br>
-            <p class="lead">Vi skal lige have dit navn og telefonnummer.</p>
+
+            <div>
+                <select>
+                    <option selected="selected" disabled="disabled">Sorter...</option>
+                    <option value="alfabetisk">Sorter alfabetisk efter kundenavn</option>
+                    <option value="kunde_id">Sorter efter kunde ID</option>
+                    <option value="antal">Sorter efter antal</option>
+                </select>
+            </div>
             <br>
 
-            <div class="row">
+            <table class="table table-striped">
+                <thead class="thead-light">
+                <tr>
+                    <th>Bund ID</th>
+                    <th>Topping ID</th>
+                    <th>Antal</th>
+                    <th>Dato</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>04-03-2020</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>05-03-2020</td>
+                </tr>
 
-                <div class="col"></div>
+            </table>
 
-                <form action="checkout.html" method="post">
 
-                    <div class="form-group">
-                    <label for="navn">Navn:</label>
-                    <input type="text" class="form-control" id="navn" name="navn">
-                </div>
-                <div class="form-group">
-                    <label for="tlf">Telefonnummer:</label>
-                    <input type="text" class="form-control" id="tlf" name="navn">
-                </div>
-                <button type="submit" class="btn btn-primary" style="float: bottom">Betal</button>
-
-            </form>
-
-                <div class="col"></div>
-
+            <div style="float: right"></div>
+            <br>
+            <a href="adminstart.html" data-toggle="tooltip" title="Tilbage til forsiden"><i class="fa fa-arrow-circle-left fa-2x" style="float: right"></i></a>
         </div>
 
+
+    </div>
+
+</div>
 
 </body>
 </html>

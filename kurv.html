@@ -26,12 +26,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Ordrer <span class="sr-only">(current)</span></a>
+                <li class="nav-item active" style="right: auto">
+                    <a class="nav-link" href="index.html">Log ud</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Kunder</a>
+                <li class="nav-item active" style="right: auto">
+                    <a class="nav-link" href="index.html">Mine ordrer</a>
                 </li>
+                <li class="nav-item active" style="right: auto">
+                    <a class="nav-link disabled" href="#">Saldo: 500,-</a>
+                </li>
+
             </ul>
             <span class="navbar-text" style="margin-right: 20px">
                 poul@poulmail.poul
@@ -76,11 +80,15 @@
 
             </table>
 
-            <form action="customerinfo.html" method="post">
+            <form action="checkout.html" method="post">
                 <br>
                 <div style="float: right">Samlet pris: 34 kr</div>
                 <br>
                 <button type="submit" class="btn btn-primary" style="float: right">Til checkout</button>
+            </form>
+
+            <form action="start.html" method="post" style="float: left">
+                <button type="submit" class="btn btn-primary" style="float: right">Jeg er ikke færdig...</button>
             </form>
 
         </div>

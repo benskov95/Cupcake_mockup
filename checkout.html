@@ -26,12 +26,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Ordrer <span class="sr-only">(current)</span></a>
+                <li class="nav-item active" style="right: auto">
+                    <a class="nav-link" href="index.html">Log ud</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Kunder</a>
+                <li class="nav-item active" style="right: auto">
+                    <a class="nav-link" href="index.html">Mine ordrer</a>
                 </li>
+                <li class="nav-item active" style="right: auto">
+                    <a class="nav-link disabled" href="#">Saldo: 500,-</a>
+                </li>
+
             </ul>
             <span class="navbar-text" style="margin-right: 20px">
                 poul@poulmail.poul
@@ -47,12 +51,30 @@
         <div style="text-align: center">
             <h1 class="display-4">Tak for din bestilling.</h1>
             <br>
-            <p class="lead">Din ordre kan hentes inden for 20 minutter.</p>
+            <table class="table table-striped">
+                <thead class="thead-light">
+                <tr>
+                    <th>Bund</th>
+                    <th>Topping</th>
+                    <th>Antal</th>
+                    <th>Pris</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Vanilla</td>
+                    <td>Strawberry</td>
+                    <td>2</td>
+                    <td>22 kr</td>
+                </tr>
+            </table>
+            <br>
+            <p class="lead" style="font-weight: bold">Samlet pris: 22 kr</p>
+            <p class="lead">Din ordre forberedes og er snart klar til afhentning.</p>
             <br>
             </div>
 
         <div style="text-align: center">
-        <a href="index.html" data-toggle="tooltip" title="Tilbage til forsiden"><i class="fa fa-arrow-circle-left fa-2x"></i></a>
+        <a href="start.html" data-toggle="tooltip" title="Tilbage til forsiden"><i class="fa fa-arrow-circle-left fa-2x"></i></a>
         </div>
 
         </div>
