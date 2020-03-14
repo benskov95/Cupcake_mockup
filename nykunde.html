@@ -34,7 +34,7 @@
 
         <div style="text-align: center">
             <h1 class="display-4">Opret bruger</h1>
-            <p class="lead">Skriv venligst din et brugernavn, en e-mail og vælg en adgangskode for at oprette din konto.</p>
+            <p class="lead">Skriv venligst dit navn, en e-mail og vælg en adgangskode for at oprette din konto.</p>
             <br>
 
             <div class="row">
@@ -43,6 +43,10 @@
                 </div>
 
                 <form action="start.html" method="post">
+                    <div class="form-group">
+                        <label for="navn">Navn:</label>
+                        <input type="text" class="form-control" id="navn" name="navn">
+                    </div>
                     <div class="form-group">
                         <label for="email">E-mail:</label>
                         <input type="text" class="form-control" id="email" name="email">
